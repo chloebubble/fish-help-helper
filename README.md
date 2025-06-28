@@ -15,7 +15,9 @@
 ```
 
 A suite of helper functions for helping you write your help text. Helpful.
+
 Use Help Helper's modular system to easily generate automatically aligned and formatted help text in your fish scripts.
+
 No more `echo`ing messy multiline string literals.
 
 Written purely in [fish](https://github.com/fish-shell/fish-shell)!
@@ -35,9 +37,10 @@ Within your fish script or function, you can call `generate_help` with your desi
 Syntax:
 ```sh
 generate_help \
-	--usage <text> # Your basic usage template \
-	--option <flag> <description> # Add an option with its description \
-	--section <title> <item 1> <item 1 description> <item 2> <item 2 description> ... # Add an info section with a list of entries
+	--usage <text> \ # Your basic usage template
+	--option <flag> <description> \ # Add an option with its description
+	--section <title> <item 1> <item 1 description> <item 2> <item 2 description> ...
+		# Add an info section with a list of entries
 ```
 
 Example usage (best paired with fish's `argparse`):
