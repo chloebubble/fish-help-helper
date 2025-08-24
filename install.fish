@@ -166,7 +166,7 @@ end
 function generate_help --description "Generate and display POSIX-style help text"
     # check for help flag first
     for arg in $argv
-        if test "$arg" = "-h" -o "$arg" = "--help"
+        if begin test "$arg" = "-h"; or test "$arg" = "--help"; end
             # check if we can call ourselves recursively (avoid infinite loop)
             if functions -q generate_help; and test (status current-function) != "generate_help"
                 generate_help \
