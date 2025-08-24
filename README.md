@@ -25,7 +25,7 @@ Written purely in [fish](https://github.com/fish-shell/fish-shell)!
 ## Installation
 Requires [fish](https://github.com/fish-shell/fish-shell).
 ```sh
-git clone git@github.com:chloebubble/fish-help-helper.git
+git clone https://github.com/chloebubble/fish-help-helper
 cd fish-help-helper
 chmod +x install.fish
 ./install.fish

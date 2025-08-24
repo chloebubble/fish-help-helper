@@ -61,7 +61,7 @@ function __help_calc_max_width
     set max_width 0
     
     # check options width
-    for i in (seq 1 2 (count $__help_options))
+    for i in (seq 1 2 (count $__help_options) 2>/dev/null)
         set opt_len (string length -- $__help_options[$i])
         if test $opt_len -gt $max_width
             set max_width $opt_len
